@@ -1,23 +1,15 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!Doctype Html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Irishmans Flowers</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+ </head>
+ <body>
+    <img id="banner" src="banner.svg" alt="Banner" onerror="this.src='banner.png'" width="70%"/>
+    <br>
+    <img class="center_img" src="bouquets\bouquet_red_and_blue.jpg" height="200px"/> 
+    <img class="center_img" src="bouquets\pink_dahlia_bouquet.jpg" height="200px"/> 
+    <img class="center_img" src="bouquets\ruddy_bouquet.jpg" height="200px"/> 
+ </body>
+ </html>
