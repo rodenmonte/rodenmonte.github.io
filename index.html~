@@ -1,0 +1,15 @@
+<!Doctype Html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Irishmans Flowers</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+ </head>
+ <body>
+    <img id="banner" src="banner.svg" alt="Banner" onerror="this.src='banner.png'" width="70%"/>
+    <br>
+    <img class="center_img" src="bouquets\bouquet_red_and_blue.jpg" height="200px"/> 
+    <img class="center_img" src="bouquets\pink_dahlia_bouquet.jpg" height="200px"/> 
+    <img class="center_img" src="bouquets\ruddy_bouquet.jpg" height="200px"/> 
+ </body>
+ </html>
