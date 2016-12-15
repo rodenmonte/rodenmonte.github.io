@@ -84,40 +84,26 @@ body {
 .main .page-header {
   margin-top: 0;
 }
-
-
-//From the bootstrap blog aka blogstrap template
-.blog-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.blog-title {
-  margin-top: 30px;
-  margin-bottom: 0;
-  font-size: 60px;
-  font-weight: normal;
-}
-.blog-description {
+.main .page-subheader{
   font-size: 20px;
   color: #999;
 }
 
 
+
+
 /*
- * Placeholder dashboard ideas
+ * Blog stuff
  */
 
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
+.blog-post {
+  margin-bottom: 60px;
 }
-.placeholders h4 {
-  margin-bottom: 0;
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
 }
-.placeholder {
+.blog-post-meta {
   margin-bottom: 20px;
-}
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
+  color: #999;
 }
