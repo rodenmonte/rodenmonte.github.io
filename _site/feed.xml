@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>rodenmonte</title>
+    <description>Monte&#39;s Dev Blog
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Nov 2017 13:48:37 -0700</pubDate>
-    <lastBuildDate>Fri, 03 Nov 2017 13:48:37 -0700</lastBuildDate>
+    <link>http://rodenmonte.github.io/</link>
+    <atom:link href="http://rodenmonte.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 03 Nov 2017 16:21:48 -0700</pubDate>
+    <lastBuildDate>Fri, 03 Nov 2017 16:21:48 -0700</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -27,14 +27,37 @@
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 03 Nov 2017 13:37:39 -0700</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2017/11/03/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2017/11/03/welcome-to-jekyll.html</guid>
+        <pubDate>Fri, 03 Nov 2017 15:22:27 -0700</pubDate>
+        <link>http://rodenmonte.github.io/jekyll/update/2017/11/03/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://rodenmonte.github.io/jekyll/update/2017/11/03/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Spoilerfy, A First Python Package</title>
+        <description>&lt;p&gt;There is a page on the internet called &lt;a href=&quot;https://www.reddit.com/r/dailyprogrammer&quot;&gt;reddit.com/r/dailyprogrammer&lt;/a&gt;, where users can gather and share solutions to problems their peers have devised. These problems certainly span the spectrum of difficulty. &lt;a href=&quot;https://www.reddit.com/r/dailyprogrammer/comments/pih8x/easy_challenge_1/&quot;&gt;Some&lt;/a&gt; could be solved by someone who has only programmed for a matter of hours, while &lt;a href=&quot;https://www.reddit.com/r/dailyprogrammer/comments/qxv8h/3152012_challenge_25_difficult/&quot;&gt;others&lt;/a&gt; still haven’t been solved (for large N).&lt;/p&gt;
+
+&lt;p&gt;In order to post a solution on the site to a problem, you need to put four spaces in front of each of your lines of code. This happens to be a one-liner in awk:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;awk &lt;span class=&quot;s1&quot;&gt;&#39;$0=&quot;    &quot;$0&#39;&lt;/span&gt; yourfile | xclip&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;But, this only works if you have access to awk, not everyone does. Even getting a bash terminal in the first place on Windows can be quite the project. This is where Spoilerfy comes in; Spoilerfy prefixes each of your lines of code with four spaces in the output of your choice on multiple platforms. Spoilerfy’s intended audience are those trying who are new to programming that are trying to improve their ability. They probably don’t know awk, and may have a hard time with basic tooling. Some of the people interested in improving don’t even know what bash is, but with Spoilerfy, they will be able to share their code on &lt;a href=&quot;https://https://www.reddit.com/r/dailyprogrammer&quot;&gt;/r/dailyprogrammer&lt;/a&gt; with ease, which will help them improve.&lt;/p&gt;
+
+&lt;p&gt;To install Spoilerfy, you can use pip, easy_install, or you can &lt;a href=&quot;https://pypi.python.org/pypi/spoilerfy/0.11&quot;&gt;download&lt;/a&gt; the compressed file from PyPI. For example: &lt;code class=&quot;highlighter-rouge&quot;&gt;pip install spoilerfy&lt;/code&gt;, you might need &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Spoilerfy has several output options. You can get your Spoilerfied text on your clipboard (via &lt;a href=&quot;https://github.com/asweigart/pyperclip&quot;&gt;pyperclip&lt;/a&gt;, in a new file, or printed to the console, all without having to know any shell commands. For example, after installing Spoilerfy via pip in an environment with Python 3.x+ installed, just type: &lt;code class=&quot;highlighter-rouge&quot;&gt;spoilerfy -c mycode.pl&lt;/code&gt; to get your spoilerfied code on your clipboard, ready to copy and paste to the comment section of the &lt;a href=&quot;https://www.reddit.com/r/dailyprogrammer&quot;&gt;/r/dailyprogrammer&lt;/a&gt; board. For more information, check out the documentation on the &lt;a href=&quot;https://www.github.com/rodenmonte/spoilerfy&quot;&gt;Github page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in putting your own package on the Python Package Index, check out &lt;a href=&quot;http://peterdowns.com/posts/first-time-with-pypi.html&quot;&gt;this&lt;/a&gt; tutorial.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 03 Nov 2017 00:00:00 -0700</pubDate>
+        <link>http://rodenmonte.github.io/2017/11/03/spoilerfy.html</link>
+        <guid isPermaLink="true">http://rodenmonte.github.io/2017/11/03/spoilerfy.html</guid>
+        
         
       </item>
     
