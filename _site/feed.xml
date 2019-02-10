@@ -2,13 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rodenmonte</title>
-    <description>Monte&#39;s Dev Blog
+    <description>Monte's Dev Blog
 </description>
-    <link>http://rodenmonte.github.io/</link>
-    <atom:link href="http://rodenmonte.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 03 Nov 2017 16:27:43 -0700</pubDate>
-    <lastBuildDate>Fri, 03 Nov 2017 16:27:43 -0700</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 09 Feb 2019 22:48:39 -0800</pubDate>
+    <lastBuildDate>Sat, 09 Feb 2019 22:48:39 -0800</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Trump Soundboard using Cordova.</title>
+        <description>&lt;p&gt;It’s easy to make android apps with &lt;a href=&quot;https://cordova.apache.org&quot;&gt;Cordova&lt;/a&gt;,
+a tool allowing developers to bundle any single page web app into
+an android and ios application. I thought I’d test it out by making
+a simple soundboard app. Here’s how it turned out:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/soundboard_screen_shot.png&quot; style=&quot;width: 300px; height: 550px;     margin: 0 auto; display: block;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cordova simply embeds the application code into a WebView. For
+applications as simple as this, performance gains from a native
+implementation aren’t noticeable. I’m looking forward to saving
+time in the future by writing my apps once and building
+for multiple platforms with Cordova.&lt;/p&gt;
+
+&lt;p&gt;The soundboard client was writte in &lt;a href=&quot;https://vuejs.org/&quot;&gt;Vue.js&lt;/a&gt;.
+A framework really wasn’t needed for a web app this simple, but I
+was interested in seeing I’d run into any difficulties in integrating
+Vue.js with a webpack build into the Cordova environment – which I
+thankfully did not.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 09 Feb 2019 00:00:00 -0800</pubDate>
+        <link>http://localhost:4000/2019/02/09/trump-soundboard.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/09/trump-soundboard.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Spoilerfy, A First Python Package</title>
@@ -16,7 +44,7 @@
 
 &lt;p&gt;In order to post a solution on the site to a problem, you need to put four spaces in front of each of your lines of code. This happens to be a one-liner in awk:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;awk &lt;span class=&quot;s1&quot;&gt;&#39;$0=&quot;    &quot;$0&#39;&lt;/span&gt; yourfile | xclip&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'$0=&quot;    &quot;$0'&lt;/span&gt; yourfile | xclip&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;But, this only works if you have access to awk, not everyone does. Even getting a bash terminal in the first place on Windows can be quite the project. This is where Spoilerfy comes in; Spoilerfy prefixes each of your lines of code with four spaces in the output of your choice on multiple platforms. Spoilerfy’s intended audience are those trying who are new to programming that are trying to improve their ability. They probably don’t know awk, and may have a hard time with basic tooling. Some of the people interested in improving don’t even know what bash is, but with Spoilerfy, they will be able to share their code on &lt;a href=&quot;https://https://www.reddit.com/r/dailyprogrammer&quot;&gt;/r/dailyprogrammer&lt;/a&gt; with ease, which will help them improve.&lt;/p&gt;
 
@@ -27,8 +55,8 @@
 &lt;p&gt;If you’re interested in putting your own package on the Python Package Index, check out &lt;a href=&quot;http://peterdowns.com/posts/first-time-with-pypi.html&quot;&gt;this&lt;/a&gt; tutorial.&lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Nov 2017 00:00:00 -0700</pubDate>
-        <link>http://rodenmonte.github.io/2017/11/03/spoilerfy.html</link>
-        <guid isPermaLink="true">http://rodenmonte.github.io/2017/11/03/spoilerfy.html</guid>
+        <link>http://localhost:4000/2017/11/03/spoilerfy.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/03/spoilerfy.html</guid>
         
         
       </item>

@@ -10,8 +10,8 @@
   <meta name="description" content="There is a page on the internet called reddit.com/r/dailyprogrammer, where users can gather and share solutions to problems their peers have devised. These p...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://rodenmonte.github.io/2017/11/03/spoilerfy.html">
-  <link rel="alternate" type="application/rss+xml" title="rodenmonte" href="http://rodenmonte.github.io/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/2017/11/03/spoilerfy.html">
+  <link rel="alternate" type="application/rss+xml" title="rodenmonte" href="http://localhost:4000/feed.xml">
 </head>
 
 
@@ -66,7 +66,7 @@
 
 <p>In order to post a solution on the site to a problem, you need to put four spaces in front of each of your lines of code. This happens to be a one-liner in awk:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">awk <span class="s1">'$0="    "$0'</span> yourfile | xclip</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">awk</span> <span class="s1">'$0="    "$0'</span> yourfile | xclip</code></pre></figure>
 
 <p>But, this only works if you have access to awk, not everyone does. Even getting a bash terminal in the first place on Windows can be quite the project. This is where Spoilerfy comes in; Spoilerfy prefixes each of your lines of code with four spaces in the output of your choice on multiple platforms. Spoilerfy’s intended audience are those trying who are new to programming that are trying to improve their ability. They probably don’t know awk, and may have a hard time with basic tooling. Some of the people interested in improving don’t even know what bash is, but with Spoilerfy, they will be able to share their code on <a href="https://https://www.reddit.com/r/dailyprogrammer">/r/dailyprogrammer</a> with ease, which will help them improve.</p>
 
