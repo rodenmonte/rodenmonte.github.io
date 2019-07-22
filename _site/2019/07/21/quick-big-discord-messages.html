@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>rodenmonte</title>
-  <meta name="description" content="Monte's Dev Blog
-">
+  <title>Quick Big Discord Messages</title>
+  <meta name="description" content="Make your discord message BIG    Raw text        Processed Text Copy to clipboard    ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/2019/07/21/quick-big-discord-messages.html">
   <link rel="alternate" type="application/rss+xml" title="rodenmonte" href="http://localhost:4000/feed.xml">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -59,40 +58,57 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Quick Big Discord Messages</h1>
+    <p class="post-meta"><time datetime="2019-07-21T00:00:00-07:00" itemprop="datePublished">Jul 21, 2019</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Jul 21, 2019</span>
+  <div class="post-content" itemprop="articleBody">
+    <style>
+    .inline-block {
+        display: inline-block;
+    }
+</style>
 
-        <h2>
-          <a class="post-link" href="/2019/07/21/quick-big-discord-messages.html">Quick Big Discord Messages</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Feb 9, 2019</span>
-
-        <h2>
-          <a class="post-link" href="/2019/02/09/trump-soundboard.html">Trump Soundboard using Cordova.</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 3, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/2017/11/03/spoilerfy.html">Spoilerfy, A First Python Package</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-
+<h1>Make your discord message BIG</h1>
+<div class="inline-block">
+    <h2>Raw text</h2>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
 </div>
+<div class="inline-block">
+    <h2>Processed Text <button id="copy">Copy to clipboard</button></h2>
+    <textarea name="processed" id="processed" cols="50" rows="10"></textarea>
+</div>
+<script src="/assets/js/quick-big-discord-messages.js"></script>
+
+<p><br /></p>
+<hr />
+
+<p><br /></p>
+
+<p>I like to send “Big messages” using text emojis in Discord. They can take a while to type.
+This tool makes sending these messages
+<img src="/assets/img/big_message.png" style="width: 300px;     margin: 0 auto; display: block;" /></p>
+
+<p>Here’s the text transformation code:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">transformText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">text</span><span class="p">.</span><span class="nx">trim</span><span class="p">().</span><span class="nx">split</span><span class="p">(</span><span class="sr">/</span><span class="se">\s</span><span class="sr">+/</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">word</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">word</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">""</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">letter</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">const</span> <span class="nx">l</span> <span class="o">=</span> <span class="nx">letter</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+      <span class="k">if</span> <span class="p">(</span> <span class="nx">letter</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">l</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/</span><span class="se">[</span><span class="sr">a-z</span><span class="se">]</span><span class="sr">/i</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s2">`:regional_indicator_</span><span class="p">${</span><span class="nx">l</span><span class="p">}</span><span class="s2">:`</span>
+      <span class="p">}</span>
+    <span class="p">}).</span><span class="nx">join</span><span class="p">(</span><span class="s2">" "</span><span class="p">);</span>
+  <span class="p">}).</span><span class="nx">join</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
+  </div>
+
+</article>
 
       </div>
     </div>
