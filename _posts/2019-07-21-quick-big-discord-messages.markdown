@@ -32,7 +32,7 @@ Here's the text transformation code:
 
 {% highlight javascript %}
 function transformText(text) {
-  text.trim().split(/\s+/)
+  return text.trim().split(/\s+/)
     .map(function (word) {
     return word.split("").map(function (letter) {
       const l = letter.toLowerCase();
