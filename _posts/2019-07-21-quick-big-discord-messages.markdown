@@ -24,7 +24,7 @@ title: Quick Big Discord Messages
 
 I like to send "Big messages" using text emojis in Discord. They can take a while to type.
 This tool makes sending these messages
-<img src="/assets/img/big_message.png"
+<img src="/assets/img/big_message.PNG"
     style="width: 300px;
     margin: 0 auto; display: block;" />
 
