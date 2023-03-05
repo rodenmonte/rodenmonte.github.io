@@ -90,21 +90,26 @@
 
 <p>I like to send “Big messages” using text emojis in Discord. They can take a while to type.
 This tool makes sending these messages
-<img src="/assets/img/big_message.png" style="width: 300px;     margin: 0 auto; display: block;" /></p>
+<img src="/assets/img/big_message.PNG" style="width: 300px;     margin: 0 auto; display: block;" /></p>
 
 <p>Here’s the text transformation code:</p>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">transformText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="nx">text</span><span class="p">.</span><span class="nx">trim</span><span class="p">().</span><span class="nx">split</span><span class="p">(</span><span class="sr">/</span><span class="se">\s</span><span class="sr">+/</span><span class="p">)</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">transformText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">text</span>
+    <span class="p">.</span><span class="nx">trim</span><span class="p">()</span>
+    <span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="sr">/</span><span class="se">\s</span><span class="sr">+/</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">word</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">word</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">""</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">letter</span><span class="p">)</span> <span class="p">{</span>
-      <span class="kd">const</span> <span class="nx">l</span> <span class="o">=</span> <span class="nx">letter</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
-      <span class="k">if</span> <span class="p">(</span> <span class="nx">letter</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">l</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/</span><span class="se">[</span><span class="sr">a-z</span><span class="se">]</span><span class="sr">/i</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="s2">`:regional_indicator_</span><span class="p">${</span><span class="nx">l</span><span class="p">}</span><span class="s2">:`</span>
-      <span class="p">}</span>
-    <span class="p">}).</span><span class="nx">join</span><span class="p">(</span><span class="s2">" "</span><span class="p">);</span>
-  <span class="p">}).</span><span class="nx">join</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">);</span>
-<span class="p">}</span></code></pre></figure>
+      <span class="k">return</span> <span class="nx">word</span>
+        <span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">""</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">letter</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">const</span> <span class="nx">l</span> <span class="o">=</span> <span class="nx">letter</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+          <span class="k">if</span> <span class="p">(</span><span class="nx">letter</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">l</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/</span><span class="se">[</span><span class="sr">a-z</span><span class="se">]</span><span class="sr">/i</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="s2">`:regional_indicator_</span><span class="p">${</span><span class="nx">l</span><span class="p">}</span><span class="s2">:`</span>
+          <span class="p">}</span>
+        <span class="p">}).</span><span class="nx">join</span><span class="p">(</span><span class="dl">"</span><span class="s2"> </span><span class="dl">"</span><span class="p">);</span>
+      <span class="p">}).</span><span class="nx">join</span><span class="p">(</span><span class="dl">"</span><span class="se">\n</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
   </div>
 

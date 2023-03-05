@@ -5,9 +5,9 @@ title: Spoilerfy, A First Python Package
 There is a page on the internet called [reddit.com/r/dailyprogrammer](https://www.reddit.com/r/dailyprogrammer), where users can gather and share solutions to problems their peers have devised. These problems certainly span the spectrum of difficulty. [Some](https://www.reddit.com/r/dailyprogrammer/comments/pih8x/easy_challenge_1/) could be solved by someone who has only programmed for a matter of hours, while [others](https://www.reddit.com/r/dailyprogrammer/comments/qxv8h/3152012_challenge_25_difficult/) still haven't been solved (for large N).
 
 In order to post a solution on the site to a problem, you need to put four spaces in front of each of your lines of code. This happens to be a one-liner in awk:
-{% highlight bash %}
+```bash
 awk '$0="    "$0' yourfile | xclip
-{% endhighlight %}
+```
 
 But, this only works if you have access to awk, not everyone does. Even getting a bash terminal in the first place on Windows can be quite the project. This is where Spoilerfy comes in; Spoilerfy prefixes each of your lines of code with four spaces in the output of your choice on multiple platforms. Spoilerfy's intended audience are those trying who are new to programming that are trying to improve their ability. They probably don't know awk, and may have a hard time with basic tooling. Some of the people interested in improving don't even know what bash is, but with Spoilerfy, they will be able to share their code on [/r/dailyprogrammer](https://https://www.reddit.com/r/dailyprogrammer) with ease, which will help them improve.
 

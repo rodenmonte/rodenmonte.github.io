@@ -10,10 +10,10 @@ function copyProcessedToKeyboard () {
     document.execCommand("copy");
 }</script></p>
 
-<p>// Transform into :regional_indicator_x:’s
-document.getElementById(‘message’).addEventListener(‘input’, function () {
-    document.getElementById(‘processed’).value = document
-        .getElementById(‘message’).value
+<p>// Transform into :regional_indicator_x:'s
+document.getElementById('message').addEventListener('input', function () {
+    document.getElementById('processed').value = document
+        .getElementById('message').value
         .trim().split(/\s+/)
         .map(function (word) {
         return word.split(“”).map(function (letter) {
@@ -25,7 +25,7 @@ document.getElementById(‘message’).addEventListener(‘input’, function ()
     }).join(“\n”);
 });</p>
 
-<p>document.getElementById(‘copy’).addEventListener(‘click’, function () {
+<p>document.getElementById('copy').addEventListener('click', function () {
     copyProcessedToKeyboard();
 });</p>
 
@@ -33,21 +33,21 @@ document.getElementById(‘message’).addEventListener(‘input’, function ()
 document.getElementById('message').select();
 &lt;/script&gt;</textarea></p>
 
-<p>It’s easy to make android apps with <a href="https://cordova.apache.org">Cordova</a>,
+<p>It's easy to make android apps with <a href="https://cordova.apache.org">Cordova</a>,
 a tool allowing developers to bundle any single page web app into
-an android and ios application. I thought I’d test it out by making
-a simple soundboard app. Here’s how it turned out:</p>
+an android and ios application. I thought I'd test it out by making
+a simple soundboard app. Here's how it turned out:</p>
 
 <p><img src="/assets/img/soundboard_screen_shot.png" style="width: 300px; height: 550px;     margin: 0 auto; display: block;" /></p>
 
 <p>Cordova simply embeds the application code into a WebView. For
 applications as simple as this, performance gains from a native
-implementation aren’t noticeable. I’m looking forward to saving
+implementation aren't noticeable. I'm looking forward to saving
 time in the future by writing my apps once and building
 for multiple platforms with Cordova.</p>
 
 <p>The soundboard client was writte in <a href="https://vuejs.org/">Vue.js</a>.
-A framework really wasn’t needed for a web app this simple, but I
-was interested in seeing I’d run into any difficulties in integrating
+A framework really wasn't needed for a web app this simple, but I
+was interested in seeing I'd run into any difficulties in integrating
 Vue.js with a webpack build into the Cordova environment – which I
 thankfully did not.</p>

@@ -30,16 +30,20 @@ This tool makes sending these messages
 
 Here's the text transformation code:
 
-{% highlight javascript %}
+```js
 function transformText(text) {
-  return text.trim().split(/\s+/)
+  return text
+    .trim()
+    .split(/\s+/)
     .map(function (word) {
-    return word.split("").map(function (letter) {
-      const l = letter.toLowerCase();
-      if ( letter.length == 1 && l.match(/[a-z]/i) ) {
-        return `:regional_indicator_${l}:`
-      }
-    }).join(" ");
-  }).join("\n");
+      return word
+        .split("")
+        .map(function (letter) {
+          const l = letter.toLowerCase();
+          if (letter.length == 1 && l.match(/[a-z]/i)) {
+            return `:regional_indicator_${l}:`
+          }
+        }).join(" ");
+      }).join("\n");
 }
-{% endhighlight %}
+```
